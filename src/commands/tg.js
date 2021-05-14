@@ -1,7 +1,7 @@
 const ms = require('ms')
 
 const commands = {
-    name: 'tg',
+    name: 'chut',
     category: 'administration',
     handle: (client, message, args) => { 
         if (!message.mentions.members.first()) 

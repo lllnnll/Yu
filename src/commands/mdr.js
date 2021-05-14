@@ -1,5 +1,5 @@
 const commands = {
-    name: 'sucemoi',
+    name: 'moi',
     category: 'misc',
     handle: (client, message, args) => { 
         message.delete()
