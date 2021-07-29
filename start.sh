@@ -2,6 +2,8 @@
 
 DOCKER_NAME="yubot"
 
+git pull --force
+
 echo remove docker container
 docker rm -f $DOCKER_NAME
 echo remove docker image
