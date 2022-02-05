@@ -36,3 +36,7 @@ for (const element of commandFiles) {
 };
 
 client.login(config.token);
+
+process.on('unhandledRejection', () => console.log('ça a crash mon reuf'));
+process.on('uncaughtException', () => console.log('ça a crash mon reuf'));
+process.on('rejectionHandled', () => console.log('ça a crash mon reuf'));
