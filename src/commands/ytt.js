@@ -6,7 +6,7 @@ const commands = {
     category: 'game',
     handle: async (client, message, args) => {
         const channel = message.mentions.channels.first()
-        if (!channel) return message.reply('zebi t trop con')
+        if (!channel) return message.reply('tu n\' est pas dans un channel')
         await axios ({
             url: 'https://discord.com/api/v8/channels/' + channel.id + '/invites',
             method:'POST',

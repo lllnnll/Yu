@@ -1,12 +1,14 @@
 const discord = require('discord.js');
 const client = new discord.Client();
 const fs = require('fs');
-const config = require ('./../config')
+const config = require ('./../config');
+const Ector = require('ector');
 
 client.prefix = '_'
 client.commands = new discord.Collection();
 client.musics = new discord.Collection();
 client.reactionrole = new discord.Collection();
+client.ector = new Ector();
 
 // ['ready.js', 'message.js']
 const eventsFiles = fs.readdirSync('./src/events');
